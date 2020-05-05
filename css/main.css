@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+$main-color: #35B635;
+$text-color: lightgrey;
+
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  overflow-x: hidden;
+}
+#navbar {
+  position: fixed;
+  height: 50px;
+  z-index: 0;
+  
+  #logo {
+    position: absolute;
+    font-family: 'Kristi', 'Oswald';
+    height: 100%;
+    width: 50px;
+    color: $text-color;
+    font-size: 33px;
+  } 
+  
+  #link-box {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 275px;
+    height: 100%;
+  }
+}
+
+.links {
+  color: $text-color;
+}
+.links:hover {
+  color: $main-color;
+  transition: 0.25s;
+  text-decoration: none;
+}
+.links:active {
+  transition: 0.05s;
+  transform: scale(0.95);
+}
+
+#welcome-section {
+  height: 100vh;
+  background-image: url("https://userscontent2.emaze.com/images/93b859f2-0037-49f8-af19-246cb1652f28/eb2ed28ab7b4d5fb653164394796a227.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+@mixin fade-in($x) {
+	-webkit-animation: fadein $x; 
+  -moz-animation: fadein $x; 
+  -ms-animation: fadein $x; 
+  -o-animation: fadein $x; 
+  animation: fadein $x;
+}
+
+#welcome-line {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -137.5px;
+  height: 1px;
+  width: 275px;
+  background-color: $main-color;
+  @include fade-in(3s);
+}
+.welcome-text {
+  color: $text-color;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  @include fade-in(3s);
+}
+#welcome-text1 {
+  margin-top: -80px;
+  margin-left: -90px;
+  width: 180px;
+}
+#welcome-text2 {
+  margin-top: -15px;
+  margin-left: -154px;
+  width: 308px;
+  overflow: hidden;
+}
+#position {
+  transform: skewX(-15deg);
+  color: $main-color;
+  font-family: "Oswald";
+  position: fixed;
+  overflow: visible;
+  top: 50%;
+  left: 50%;
+  margin-top: 35px;
+  margin-left: -130px;
+  width: 260px;
+  @include fade-in(3s);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+		from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframs fadein {
+		from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+		from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#about-me {
+  position: relative;
+  background: linear-gradient(180deg, #1f1f1f, black);
+  padding: 100px 5% 100px 5%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  z-index: 1;
+}
+#about-me-title {
+  font-weight: bold;
+  font-size: 45px;
+  color: $text-color;
+  font-family: "Oswald";
+}
+#about-me-paragraph {
+  color: $text-color;
+  line-height: 1.35;
+}
+#projects { 
+  background-color: black;
+  position: relative;
+  z-index: 2;
+}
+.project-container {
+  position: relative;
+  margin: auto;
+  height: 260px;
+  width: 360px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.project {
+  position: relative;
+  height: 260px;
+  width: 360px;
+  margin: 10px 0px 10px 0px;
+  transition: .5s ease;
+  background-color: #1f1f1f;
+}
+.project-tile {
+  transition: .5s ease;
+  position: absolute;
+  opacity: 0;
+  width: 40%;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.project-tile-text {
+	transition: .5s;
+  background-color: black;
+  color: $main-color;
+  font-size: 18px;
+	padding-top: 16px;
+	padding-bottom: 18px;
+	border-radius: 50px;
+	font-family: 'Oswald', sans-serif;
+}
+.project-container:hover .project {
+  opacity: 0.4;
+}
+.project-container:hover .project-tile {
+  opacity: 1;
+	width: 100%;
+}
+.project-container:hover .project-tile-text {
+	border-radius: 0px;
+}
+#socials {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  width: 100%;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $text-color;
+  padding-top: 40px;
+  background: linear-gradient(0deg, #1f1f1f, black);
+  z-index: 1;
+}
+#social-header {
+  margin: auto;
+  font-size: 4vw;
+}
+.social-icon-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.social-icon-container:hover .social-text {
+  transition: 0.5s;
+  opacity: 1;
+  transform: translate(0, -7px);
+}
+.social-text {
+  position: relative;
+  bottom: 100px;
+  margin: 5px;
+  color: $text-color;
+  font-size: 20px;
+  opacity: 0;
+}
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
+}
+#social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+#twitter,
+#facebook,
+#linkedin {
+  display: block;
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+#email,
+#github {
+  display: block;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  transform: scale(0.55);
+}
+#twitter:hover,
+#facebook:hover,
+#linkedin:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+#email:hover,
+#github:hover {
+  transform: scale(0.60);
+  transition: 0.2s;
+}
+#social-line {
+  display: block;
+  position: absolute;
+  margin-top: 80px;
+  height: 2px;
+  background-color: $main-color;
+}
+
+@media (max-width: 420px) {
+  #link-box {
+    width: 68%;
+    margin: auto;
+  }
+  .project {
+    width: 95%;
+  }
+  .project-container {
+    width: 95%;
+  }
+  #about-me {
+    position: sticky;
+    top: 0;
+  }
+}
