@@ -3,7 +3,9 @@
 
 /*$main-color: #35B635;
 $text-color: lightgrey;*/
-
+.fab {
+	color: red;
+}
 html {
   scroll-behavior: smooth; 
 }
@@ -12,28 +14,22 @@ body {
 }
 #navbar {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
   height: 50px;
   z-index: 0;
-} 
+}
 #logo {
   position: absolute;
-  margin-left: 20px;
   font-family: 'Kristi', 'Oswald';
   height: 100%;
   width: 50px;
   color: lightgrey;
   font-size: 33px;
 } 
-  
-#link-box {
+#social-box {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   position: absolute;
-  right: 10px;
+  right: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -41,21 +37,47 @@ body {
   width: 275px;
   height: 100%;
 }
-
-
-.links {
-  color: lightgrey;
+.social-icon-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
 }
-.links:hover {
-  color: #35B635;
-  transition: 0.25s;
-  text-decoration: none;
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
 }
-.links:active {
-  transition: 0.05s;
-  transform: scale(0.95);
+#social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
-
+#twitter,
+#linkedin {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+#email,
+#github {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  transform: scale(0.55);
+}
+#twitter:hover,
+#linkedin:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+#email:hover,
+#github:hover {
+  transform: scale(0.60);
+  transition: 0.2s;
+}
 #welcome-section {
   height: 100vh;
   background-image: url("https://userscontent2.emaze.com/images/93b859f2-0037-49f8-af19-246cb1652f28/eb2ed28ab7b4d5fb653164394796a227.jpg");
@@ -202,83 +224,60 @@ body {
 .project-container:hover .project-tile-text {
 	border-radius: 0px;
 }
-#socials {
-  font-family: 'Oswald', sans-serif;
-  position: absolute;
-  width: 100%;
+#skills-text {
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: -5px;
+}
+#skills {
 	display: flex;
-  flex-direction: column;
+	flex-direction: row;
+	justify-content: space-around;
+  position: absolute;
+	margin-top: -10px;
+	padding-top: 30px;
   align-items: center;
-  justify-content: center;
   color: lightgrey;
-  padding-top: 40px;
   background: linear-gradient(0deg, #1f1f1f, black);
   z-index: 1;
 }
-.social-icon-container {
-  position: relative;
-  width: 80px;
-  height: 80px;
+#skills-header {
+	font-family: 'Oswald', sans-serif;
+	color: lightgrey;
+	background-color: black;
+	width: 100%;
+	text-align: center;
 }
-.social-icon-container:hover .social-text {
+.fab {
+	margin-bottom: 20px;
+}
+.fab:hover .skills-text {
   transition: 0.5s;
   opacity: 1;
   transform: translate(0, -7px);
 }
-.social-text {
-  position: relative;
-  bottom: 100px;
-  margin: 5px;
-  color: lightgrey;
-  font-size: 20px;
-  opacity: 0;
+.skills-text {
+	font-family: 'Oswald', sans-serif;
+	opacity: 0;
+	font-size: 20px;
+	margin-top: 15px;
+	color: lightgrey;
+	text-align: center;
 }
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none !important;
+.fa-html5 {
+	color: orange;
 }
-#social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 50%;
-  padding: 40px;
-  margin-bottom: 30px;
+.fa-css3-alt {
+	color: #2965f1;
 }
-#twitter,
-#facebook,
-#linkedin {
-  display: block;
-  position: relative;
-  height: 80px;
-  width: 80px;
+.fa-sass {
+	color: pink;
 }
-#email,
-#github {
-  display: block;
-  position: relative;
-  height: 80px;
-  width: 80px;
-  transform: scale(0.55);
+.fa-js {
+	color: #FFDB4F;
 }
-#twitter:hover,
-#facebook:hover,
-#linkedin:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
+.fa-react {
+	color: #61DBFB;
 }
-#email:hover,
-#github:hover {
-  transform: scale(0.60);
-  transition: 0.2s;
-}
-#social-line {
-  display: block;
-  position: absolute;
-  margin-top: 40px;
-  height: 2px;
-  background-color: #35B635;
-}
-
 @media (max-width: 420px) {
   #link-box {
     width: 68%;
