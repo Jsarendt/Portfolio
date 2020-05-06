@@ -220,6 +220,11 @@ a:hover, a:visited, a:link, a:active {
   padding-top: 16px;
   padding-bottom: 18px;
 }
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #skills-text {
   font-family: 'Oswald', sans-serif;
   margin-bottom: -5px;
@@ -228,7 +233,6 @@ a:hover, a:visited, a:link, a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: absolute;
   margin-top: -10px;
   padding-top: 30px;
   align-items: center;
@@ -242,6 +246,7 @@ a:hover, a:visited, a:link, a:active {
   background-color: black;
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
 .fab {
   margin-bottom: 20px;
@@ -275,7 +280,7 @@ a:hover, a:visited, a:link, a:active {
   color: #61DBFB;
 }
 @media (max-width: 420px) {
-  #link-box {
+  #social-box {
     width: 68%;
     margin: auto;
   }
