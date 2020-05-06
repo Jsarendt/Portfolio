@@ -21,6 +21,7 @@ body {
 } 
 #logo {
   position: absolute;
+  margin-left: 20px;
   font-family: 'Kristi', 'Oswald';
   height: 100%;
   width: 50px;
