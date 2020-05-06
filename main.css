@@ -293,6 +293,7 @@ a:hover, a:visited, a:link, a:active {
   #about-me {
     position: sticky;
     top: 0;
+    padding: 20px 5% 150px 5%;
   }
   #skills {
     flex-direction: column;
