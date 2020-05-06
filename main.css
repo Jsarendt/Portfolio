@@ -215,10 +215,6 @@ body {
   background: linear-gradient(0deg, #1f1f1f, black);
   z-index: 1;
 }
-#social-header {
-  margin: auto;
-  font-size: 4vw;
-}
 .social-icon-container {
   position: relative;
   width: 80px;
