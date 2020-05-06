@@ -12,31 +12,32 @@ body {
 }
 #navbar {
   position: fixed;
+  width: 100%;
   height: 50px;
   z-index: 0;
+} 
+#logo {
+  position: absolute;
+  font-family: 'Kristi', 'Oswald';
+  height: 100%;
+  width: 50px;
+  color: lightgrey;
+  font-size: 33px;
+} 
   
-  #logo {
-    position: absolute;
-    font-family: 'Kristi', 'Oswald';
-    height: 100%;
-    width: 50px;
-    color: lightgrey;
-    font-size: 33px;
-  } 
-  
-  #link-box {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    position: absolute;
-    right: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 275px;
-    height: 100%;
-  }
+#link-box {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 275px;
+  height: 100%;
 }
+
 
 .links {
   color: lightgrey;
