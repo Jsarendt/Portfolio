@@ -204,7 +204,7 @@ a:hover, a:visited, a:link, a:active {
 .project-tile-text {
   transition: .5s;
   background-color: black;
-  color: $main-color;
+  color: #35B635;
   font-size: 18px;
   padding-top: -10px;
   padding-bottom: -18px;
