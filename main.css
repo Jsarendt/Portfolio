@@ -294,4 +294,7 @@ a:hover, a:visited, a:link, a:active {
     position: sticky;
     top: 0;
   }
+  #skills {
+    flex-direction: column;
+  }
 }
