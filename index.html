@@ -6,18 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!---Google Fonts--->
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+	<!---Font Awesome--->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="main.css">
   </head>
 <body>
-  <nav id="navbar">
-    <div id="logo">JA</div>
-    <div id="link-box">
-      <a href="#about-me" class="links">About</a>
-      <a href="#projects" class="links">Projects</a>
-      <a href="#socials" class="links">Socials</a>
+  <nav class="container-fluid" id="navbar">
+    <div id="logo" class="text-center">JA</div>
+    <div id="social-box">
+      <div id="social-icons">
+      <div class="social-icon-container">
+        <a>
+          <img src="https://cdn2.iconfinder.com/data/icons/jetflat-multimedia/90/004_009_mail_email_envelope_message-512.png" id="email"></img>
+        </a>
+      </div>
+      <div class="social-icon-container">
+        <a href="https://github.com/Jsarendt"  target="_blank">
+          <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" id="github">
+          </img>
+        </a>
+      </div>
+      <div class="social-icon-container">
+        <a>
+          <img src="https://cdn1.iconfinder.com/data/icons/social-networking-2/160/twitter-512.png" id="twitter">
+          </img>
+        </a>
+      </div>
+      <div class="social-icon-container">
+        <a href="https://www.linkedin.com/in/jacob-arendt-38b67b12a/" target="_blank">
+          <img src="https://cdn1.iconfinder.com/data/icons/social-networking-2/160/linkedin-512.png" id="linkedin">
+          </img>
+        </a>
+      </div>
+    </div>
     </div>
   </nav>
   <section id="welcome-section">
@@ -77,44 +102,25 @@
   </div>
   </div>
   </section>
-  <section id="socials">
-    <div id="social-icons">
-      <div class="social-icon-container">
-        <a>
-          <img src="https://cdn2.iconfinder.com/data/icons/jetflat-multimedia/90/004_009_mail_email_envelope_message-512.png" id="email"></img>
-          <div class="social-text text-center">Email</div>
-        </a>
-      </div>
-      <div class="social-icon-container">
-        <a href="https://github.com/Jsarendt"  target="_blank">
-          <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" id="github">
-            <div class="social-text text-center">Github</div>
-          </img>
-        </a>
-      </div>
-      <div class="social-icon-container">
-        <a>
-          <img src="https://cdn1.iconfinder.com/data/icons/social-networking-2/160/twitter-512.png" id="twitter">
-            <div class="social-text text-center">Twitter</div>
-          </img>
-        </a>
-      </div>
-      <div class="social-icon-container">
-        <a>
-          <img src="https://cdn1.iconfinder.com/data/icons/social-networking-2/160/facebook-512.png" id="facebook">
-            <div class="social-text text-center">Facebook</div>
-          </img>
-        </a>
-      </div>
-      <div class="social-icon-container">
-        <a href="https://www.linkedin.com/in/jacob-arendt-38b67b12a/" target="_blank">
-          <img src="https://cdn1.iconfinder.com/data/icons/social-networking-2/160/linkedin-512.png" id="linkedin">
-            <div class="social-text text-center">LinkedIn</div>
-          </img>
-        </a>
-      </div>
-    </div>
-    <div id="social-line" class="container-fluid"></div>
+  <section id="skills-container">
+	<h1 id="skills-header">Proficient Skills</h1>
+	<div id="skills" class="container-fluid">
+		<i class="fab fa-html5 fa-5x">
+			<p class="skills-text">HTML5</p>
+		</i>
+		<i class="fab fa-css3-alt fa-5x">
+			<p class="skills-text">CSS3</p>
+		</i>
+		<i class="fab fa-sass fa-5x">
+			<p class="skills-text">SASS</p>
+		</i>
+		<i class="fab fa-js fa-5x">
+			<p class="skills-text">Javascript</p>
+		</i>
+		<i class="fab fa-react fa-5x">
+			<p class="skills-text">React</p>
+		</i>
+	</div>
   </section>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
