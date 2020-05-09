@@ -178,14 +178,14 @@ a:hover, a:visited, a:link, a:active {
 .project-container {
   position: relative;
   margin: auto;
-  height: 260px;
+  height: 240px;
   width: 360px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .project {
   position: relative;
-  height: 260px;
+  height: 240px;
   width: 360px;
   margin: 10px 0px 10px 0px;
   transition: .5s ease;
