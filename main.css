@@ -1,7 +1,9 @@
-html {
-  scroll-behavior: smooth;
+:root {
   --main-color: #35B635;
   --text-color: lightgrey;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
