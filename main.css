@@ -1,7 +1,7 @@
-$main-color: #35B635;
-$text-color: lightgrey;
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  --main-color: #35B635;
+  --text-color: lightgrey;
 }
 body {
   overflow-x: hidden;
@@ -16,7 +16,7 @@ body {
   font-family: 'Kristi', 'Oswald';
   height: 100%;
   width: 50px;
-  color: $text-color;
+  color: var(--text-color);
   font-size: 33px;
 } 
 #social-box {
@@ -81,13 +81,6 @@ a:hover, a:visited, a:link, a:active {
   background-attachment: fixed;
   text-align: center;
 }
-@mixin fade-in($x) {
-	-webkit-animation: fadein $x; 
-  -moz-animation: fadein $x; 
-  -ms-animation: fadein $x; 
-  -o-animation: fadein $x; 
-  animation: fadein $x;
-}
 
 #welcome-line {
   display: block;
@@ -98,15 +91,13 @@ a:hover, a:visited, a:link, a:active {
   margin-left: -137.5px;
   height: 1px;
   width: 275px;
-  background-color: $main-color;
-  @include fade-in(3s);
+  background-color: var(--main-color);
 }
 .welcome-text {
-  color: $text-color;
+  color: var(--text-color);
   position: fixed;
   top: 50%;
   left: 50%;
-  @include fade-in(3s);
 }
 #welcome-text1 {
   margin-top: -80px;
@@ -121,7 +112,7 @@ a:hover, a:visited, a:link, a:active {
 }
 #position {
   transform: skewX(-15deg);
-  color: $main-color;
+  color: var(--main-color);
   font-family: "Oswald";
   position: fixed;
   overflow: visible;
@@ -130,25 +121,8 @@ a:hover, a:visited, a:link, a:active {
   margin-top: 35px;
   margin-left: -130px;
   width: 260px;
-  @include fade-in(3s);
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@-webkit-keyframs fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 #about-me {
   position: relative;
   background: linear-gradient(180deg, #1f1f1f, black);
@@ -160,11 +134,11 @@ a:hover, a:visited, a:link, a:active {
 #about-me-title {
   font-weight: bold;
   font-size: 45px;
-  color: $text-color;
+  color: var(--text-color);
   font-family: "Oswald";
 }
 #about-me-paragraph {
-  color: $text-color;
+  color: var(--text-color);
   line-height: 1.35;
 }
 #projects { 
@@ -187,7 +161,6 @@ a:hover, a:visited, a:link, a:active {
   width: 360px;
   margin: 10px 0px 10px 0px;
   transition: .5s ease;
-  background-color: #1f1f1f;
 }
 .project-tile {
   transition: .5s ease;
@@ -202,7 +175,7 @@ a:hover, a:visited, a:link, a:active {
 .project-tile-text {
   transition: .5s;
   background-color: black;
-  color: $main-color;
+  color: var(--main-color);
   font-size: 18px;
   padding-top: -10px;
   padding-bottom: -18px;
@@ -234,13 +207,13 @@ a:hover, a:visited, a:link, a:active {
   margin-top: -10px;
   padding-top: 30px;
   align-items: center;
-  color: $text-color;
+  color: var(--text-color);
   background: linear-gradient(0deg, #1f1f1f, black);
   z-index: 1;
 }
 #skills-header {
   font-family: 'Oswald', sans-serif;
-  color: $main-color;
+  color: var(--main-color);
   background-color: black;
   width: 100%;
   text-align: center;
@@ -259,7 +232,7 @@ a:hover, a:visited, a:link, a:active {
   opacity: 0;
   font-size: 20px;
   margin-top: 15px;
-  color: $text-color;
+  color: var(--text-color);
   text-align: center;
 }
 .fa-html5 {
