@@ -177,7 +177,7 @@ a:hover, a:visited, a:link, a:active {
 .project-tile-text {
   transition: .5s;
   background-color: black;
-  color: var(--main-color);
+  color: var(--text-color);
   font-size: 18px;
   padding-top: -10px;
   padding-bottom: -18px;
@@ -215,7 +215,7 @@ a:hover, a:visited, a:link, a:active {
 }
 #skills-header {
   font-family: 'Oswald', sans-serif;
-  color: var(--main-color);
+  color: var(--text-color);
   background-color: black;
   width: 100%;
   text-align: center;
