@@ -297,6 +297,8 @@ a:hover, a:visited, a:link, a:active {
     padding: 20px 5% 150px 5%;
   }
   #skills {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
   }
 }
