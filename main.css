@@ -253,6 +253,14 @@ a:hover, a:visited, a:link, a:active {
   color: #61DBFB;
 }
 @media (max-width: 420px) {
+  #welcome-section {
+		background-attachment: scroll;
+	}
+	#welcome-line,
+	.welcome-text,
+	#position {
+		position: absolute;
+	}
   #social-box {
     width: 68%;
     margin: auto;
