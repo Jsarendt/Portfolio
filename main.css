@@ -96,21 +96,21 @@ a:hover, a:visited, a:link, a:active {
   background-color: var(--main-color);
 }
 .welcome-text {
-  color: var(--text-color);
-  font-family: 'Montserrat', sans-serif;
+  color: $text-color;
   position: fixed;
+  font-family: 'Montserrat', sans-serif;
   top: 50%;
-  left: 50%;
+  @include fade-in(3s);
 }
 #welcome-text1 {
   margin-top: -80px;
-  margin-left: -100px;
-  width: 180px;
+  text-align: center;
+  width: 100%;
 }
 #welcome-text2 {
   margin-top: -15px;
-  margin-left: -175px;
-  width: 388px;
+  text-align: center;
+  width: 100%;
   overflow: hidden;
 }
 #position {
