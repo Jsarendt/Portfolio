@@ -96,7 +96,7 @@ a:hover, a:visited, a:link, a:active {
   background-color: var(--main-color);
 }
 .welcome-text {
-  color: $text-color;
+  color: var(--text-color);
   position: fixed;
   font-family: 'Montserrat', sans-serif;
   top: 50%;
@@ -120,10 +120,10 @@ a:hover, a:visited, a:link, a:active {
   position: fixed;
   overflow: visible;
   top: 50%;
-  left: 50%;
   margin-top: 35px;
-  margin-left: -130px;
-  width: 260px;
+  text-align: center;
+  width: 100%;
+  @include fade-in(3s);
 }
 
 #about-me {
