@@ -101,6 +101,7 @@ a:hover, a:visited, a:link, a:active {
   font-family: 'Montserrat', sans-serif;
   top: 50%;
   @include fade-in(3s);
+  font-size: 45px;
 }
 #welcome-text1 {
   margin-top: -80px;
@@ -254,28 +255,34 @@ a:hover, a:visited, a:link, a:active {
   color: #61DBFB;
 }
 @media (max-width: 420px) {
-  #welcome-section {
-		background-attachment: scroll;
-	}
-	#welcome-line,
-	.welcome-text,
-	#position {
-		position: absolute;
-	}
   #social-box {
     width: 68%;
     margin: auto;
+  }
+  #welcome-section {
+    background-attachment: scroll;
+  }
+  .welcome-text {
+    font-size: 40px;
+    position: absolute;
+  }
+  #welcome-line,
+  #position {
+    position: absolute;
+  }
+  #about-me {
+    position: sticky;
+    top: 0;
+    padding: 20px 5% 150px 5%;
+  }
+  #about-me-paragraph {
+    width: 100%;
   }
   .project {
     width: 95%;
   }
   .project-container {
     width: 95%;
-  }
-  #about-me {
-    position: sticky;
-    top: 0;
-    padding: 20px 5% 150px 5%;
   }
   #skills {
     display: grid;
