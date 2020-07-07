@@ -28,7 +28,7 @@ body {
   right: 0px;
   display: flex;
   height: 100%;
-	color: var(--text-color);
+  color: var(--text-color);
 }
 .social-icon-container {
   position: relative;
@@ -36,27 +36,27 @@ body {
 }
 #social-icons {
   display: flex;
-	align-items: center;
+  align-items: center;
 }
 .contact-details {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
   text-shadow: 2px 2px 1px #1f1f1f;
-	color: var(--text-color);
-	font-size: 18px;
-	width: 100px;
-	height: 100%;
+  color: var(--text-color);
+  font-size: 18px;
+  width: 100px;
+  height: 100%;
 }
 .fab,
 .fas {
-	padding: 5px 5px 0px 0px;
+  padding: 5px 5px 0px 0px;
 }
 a:hover, a:visited, a:link, a:active {
   text-decoration: none !important;
-	color: var(--text-color);
+  color: var(--text-color);
 }
 .contact-details:hover {
-	color: var(--text-color);
+  color: var(--text-color);
 }
 #welcome-section {
   height: 100vh;
