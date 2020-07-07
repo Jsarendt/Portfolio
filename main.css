@@ -168,6 +168,10 @@ a:hover, a:visited, a:link, a:active {
   padding-bottom: -18px;
   font-family: 'Oswald', sans-serif;
 }
+.code {
+	color: var(--main-color);
+	font-weight: bold;
+}
 .project-container:hover .project {
   opacity: 0.4;
 }
