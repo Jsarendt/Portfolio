@@ -237,9 +237,14 @@ a:hover, a:visited, a:link, a:active {
 .fa-react {
   color: #61DBFB;
 }
+@media (max-width: 500px) {
+  .contact-details {
+    font-size: 15px;
+    width: 75px;
+  }
+}
 @media (max-width: 420px) {
   #social-box {
-    width: 68%;
     margin: auto;
   }
   #welcome-section {
