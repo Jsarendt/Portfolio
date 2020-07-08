@@ -79,6 +79,9 @@ a:hover, a:visited, a:link, a:active {
   background-color: var(--main-color);
 }
 .welcome-text {
+  background: linear-gradient(270deg, rgb(50,50,50), var(--text-color));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   color: var(--text-color);
   position: fixed;
   font-family: 'Montserrat', sans-serif;
