@@ -20,3 +20,5 @@ Current technologies used in linked projects include
 The initial design and development for the portfolio is complete. Small changes are being added here and there as my Web Design skills improve and my Web Development knowledge grows.
 
 New projects will continue to be added and taking the place of my older/worse projects. A larger sample of my projects can be found on my codepen project page.
+
+Link to working [portfolio page](https://jsarendt.github.io/Portfolio/)
