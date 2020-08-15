@@ -12,6 +12,8 @@ Current technologies used in linked projects include
 - React-Router
 - Ajax
 - Geocoding and OpenWeatherMap API's
+- Node.js
+- Webpack
 
 ## Portfolio Status
 
