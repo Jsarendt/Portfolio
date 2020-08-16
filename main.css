@@ -245,6 +245,7 @@ a:hover, a:visited, a:link, a:active {
   display: flex;
   flex-direction: row;
   color: orange;
+  z-index: 2;
 }
 .fa-css3-alt {
   margin-left: 10px;
@@ -256,6 +257,7 @@ a:hover, a:visited, a:link, a:active {
 }
 .fa-js {
   color: #FFDB4F;
+  z-index: 2;
 }
 .fa-react {
   margin-left: 10px;
@@ -263,6 +265,7 @@ a:hover, a:visited, a:link, a:active {
 }
 .fa-node-js {
   color: #68A063;
+  z-index: 2;
 }
 .fa-git-alt {
   margin-left: 10px;
