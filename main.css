@@ -40,15 +40,17 @@
   width: 100px;
   height: 100%;
 }
+.contact-details:hover {
+	transform: translateY(5px);
+	transition: 0.2s;
+	color: var(--text-color);
+}
 .fab,
 .fas {
   padding: 5px 5px 0px 0px;
 }
 a:hover, a:visited, a:link, a:active {
   text-decoration: none !important;
-  color: var(--text-color);
-}
-.contact-details:hover {
   color: var(--text-color);
 }
 #welcome-section {
@@ -102,7 +104,7 @@ a:hover, a:visited, a:link, a:active {
   top: 50%;
   margin-top: 35px;
   text-align: center;
-  width: 100%;
+  width: 98vw;
   @include fade-in(3s);
 }
 
