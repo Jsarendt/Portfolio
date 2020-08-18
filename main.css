@@ -2,16 +2,16 @@
   --main-color: #35B635;
   --text-color: lightgrey;
 }
-html {
+
+html, body {
   scroll-behavior: smooth;
-}
-body {
   overflow-x: hidden;
 }
 #navbar {
   position: fixed;
   height: 50px;
   z-index: 0;
+  width: 100vw;
 }
 #logo {
   position: absolute;
@@ -192,12 +192,13 @@ a:hover, a:visited, a:link, a:active {
   justify-content: center;
   margin-left: -20px;
   margin-right: -20px;
+  width: 100vw;
 }
 #skills-header {
   font-family: 'Oswald', sans-serif;
   color: var(--text-color);
   background-color: black;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   z-index: 2;
 }
@@ -212,6 +213,7 @@ a:hover, a:visited, a:link, a:active {
   background: linear-gradient(0deg, #1f1f1f, black);
   z-index: 1;
   padding-bottom: 100px;
+  width: 100vw;
 }
 .icon-with-text {
   display: flex;
