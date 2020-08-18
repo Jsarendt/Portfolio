@@ -3,9 +3,6 @@
   --text-color: lightgrey;
 }
 
-html, body {
-  scroll-behavior: smooth;
-}
 #navbar {
   position: fixed;
   height: 50px;
@@ -289,6 +286,9 @@ a:hover, a:visited, a:link, a:active {
   }
 }
 @media (max-width: 420px) {
+  #navbar {
+    position: absolute;
+  }
   #social-box {
     margin: auto;
   }
@@ -296,11 +296,11 @@ a:hover, a:visited, a:link, a:active {
     background-attachment: scroll;
   }
   .welcome-text {
-		font-size: 32px;
-		padding-top: 7px;
-		font-weight: bold;
-		position: absolute;
-	}
+    font-size: 32px;
+    padding-top: 7px;
+    font-weight: bold;
+    position: absolute;
+  }
   #welcome-line,
   #position {
     position: absolute;
