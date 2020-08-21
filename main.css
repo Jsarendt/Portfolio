@@ -312,7 +312,6 @@ a:hover, a:visited, a:link, a:active {
     position: absolute;
   }
   #about-me {
-    position: sticky;
     top: 0;
     padding: 40px 5% 150px 5%;
   }
