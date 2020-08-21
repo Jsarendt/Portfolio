@@ -2,7 +2,10 @@
   --main-color: #35B635;
   --text-color: lightgrey;
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 #navbar {
   position: fixed;
   height: 50px;
@@ -41,9 +44,9 @@
   height: 100%;
 }
 .contact-details:hover {
-	transform: translateY(5px);
-	transition: 0.2s;
-	color: var(--text-color);
+  transform: translateY(5px);
+  transition: 0.2s;
+  color: var(--text-color);
 }
 .fab,
 .fas {
@@ -132,6 +135,7 @@ a:hover, a:visited, a:link, a:active {
   position: relative;
   z-index: 2;
   padding-bottom: 50px;
+  overflow-x: hidden;
 }
 .project-container {
   position: relative;
