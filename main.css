@@ -35,18 +35,19 @@
   height: 100%;
 }
 .contact-details {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
   text-shadow: 2px 2px 1px #1f1f1f;
-  color: var(--text-color);
-  font-size: 18px;
-  width: 100px;
-  height: 100%;
+	border-bottom: 3px solid transparent;
+	color: var(--text-color);
+	font-size: 18px;
+	height: 100%;
+	transition: 0.7s;
+	border-radius: 0px;
 }
 .contact-details:hover {
-  transform: translateY(5px);
-  transition: 0.2s;
-  color: var(--text-color);
+	border-bottom: 3px solid var(--main-color);
+	color: var(--text-color);
 }
 .fab,
 .fas {
